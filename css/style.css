@@ -1,0 +1,83 @@
+:root {
+    font-size: 10px;
+}
+
+
+
+html {
+    font-family: "Roboto", sans-serif;
+}
+#logo, h1, h2, h3, h4, h5, h6{
+    font-family:"Shrikhand", sans-serif;
+    font-size:15px;
+}
+
+#logo{
+    grid-area: logo;
+}
+#intro{
+    grid-area:intro;
+}
+#restaurant{
+    grid-area:resto;
+}
+.footer{
+    grid-area:footer;
+}
+body{
+    display:grid;
+    grid-template-areas:"logo "
+                        "intro "
+                        "resto "
+                        "footer ";
+    grid-template-rows: 80px 470px 600px 100px;
+    grid-template-columns:1fr;
+    grid-gap: 1rem;
+}
+#logo{
+
+    height:70px;
+    line-height:70px;
+    text-align:center;
+
+}
+
+#intro {
+    text-align:center;
+}
+#search h4{
+    font-size:30px;
+}
+#search p{
+    font-size:20px;
+}
+#search button{
+    height: 30px;
+    border-radius: 15px;
+}
+#util h4{
+    padding-left: 10px;
+    font-size: 20px;
+    text-align:left;
+}
+#util ul, footer ul{
+    justify-content:space-around;
+    list-style-type: none;
+}
+
+#util li{
+
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    border: solid silver;
+    border-radius: 10px;
+
+}
+#util span{
+    padding-left: 10px;
+}
+footer> h4{
+    padding-left:4rem;
+}
