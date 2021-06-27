@@ -1,0 +1,248 @@
+root {
+    font-size: 10px;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+}
+
+#logo{
+    font-family: "Shrikhand", sans-serif;
+    font-size: 20px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "roboto", sans-serif;
+    font-size: 20px;
+}
+
+#logo {
+    grid-area: logo;
+}
+
+#menu {
+    grid-area: menu;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "logo "
+        "menu"
+        "footer ";
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr;
+
+    background-color: #eee;
+}
+
+#logo {
+    background-color: white;
+    font-size: 10px;
+}
+
+#logo h1 {
+    display: flex;
+    position: relative;
+    top: 10px;
+    left: 120px;
+    color:black;
+    font-family:"Shrikhand";
+}
+
+#logo i {
+   
+    position: relative;
+    bottom: 10px;
+    font-size: 15px;
+    padding-left: 10px;
+    color: black;
+
+}
+.logotitle{
+    grid-area:logotitle;
+}
+.logoicon{
+    grid-area:logoicon;
+}
+.logoname{
+    display:grid;
+    grid-template-areas:"logotitle logoicon";
+    grid-template-rows:51px;
+    grid-template-columns: 1fr .2fr;
+    background-color: rgb(239, 239, 239);
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 40px 40px 0 0;
+    font-weight: 600;
+    
+}
+.logotitle{
+    padding-left: 20px;
+    line-height: 51px;
+    font-size: 30px;
+}
+
+/*#logo div {
+    height: 51px;
+}
+
+#logo div h2 {
+
+    padding: 10px 0 0 15px;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(239, 239, 239);
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 40px 40px 0 0;
+    font-weight: 600;
+    font-size: 25px;
+}*/
+
+#logo div i {
+    top: 15px;
+    font-size: 25px;
+ }
+
+#starter {
+    grid-area: starter;
+}
+
+#main_course {
+    grid-area: main_course;
+}
+
+#dessert {
+    grid-area: dessert;
+}
+
+#menu {
+    display: grid;
+    grid-template-areas:
+
+        "starter"
+        "main_course"
+        "dessert";
+    grid-gap: 1rem;
+
+    grid-template-columns: 1fr;
+    background-color: rgb(239, 239, 239);
+}
+
+
+h3 {
+    margin-bottom: 1.5rem;
+    padding-left:10px;
+    border-bottom: 4px solid lightseagreen;
+    width: 55px;
+   
+}
+
+.title {
+    grid-area: title;
+}
+
+.with {
+    grid-area: with;
+}
+
+.price {
+    grid-area: price;
+}
+.check{
+    grid-area:check;
+}
+
+#menu li {
+    display: grid;
+    grid-template-areas:"title title check"
+                        "with price check";
+    grid-template-columns:1.8fr .2fr .2fr;
+    grid-template-rows:30px;
+    margin: .5rem .5rem 1rem .5rem;
+    padding-left:10px;
+    line-height: 30px;
+    font-size: 20px;
+    background-color:white;
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 15px;
+    box-shadow: 0 3px 5px 0 rgb(239 239 239);
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.price {
+    
+    font-weight: 600;
+    transition: all 1s ease-out;
+}
+
+.check i{
+    
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 15px;
+    color:rgba(153,226,208);
+    background-color: white;
+    border: 1px solid rgb(153,226,208);
+    border-radius:50%;
+    opacity:0;
+    
+}
+
+.check:hover,
+.check:active {
+    transition: transform 450ms, color 300ms 150ms;
+    border:1px solid rgba(153,226,208,1);
+    border-radius: 15%;
+    background-color: rgba(153,226,208,1);
+}
+
+button {
+    padding: 0 1rem;
+    margin: 2rem 2rem 2rem 5.5rem;
+    width: 10rem;
+    height: 3rem;
+    line-height: 3rem;
+    background: linear-gradient(to bottom right, #ff79da, #9356dc);
+    border-radius: 25px;
+    border-color: #ff79da;
+    color: white;
+    font-size: 15px;
+}
+
+footer {
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+footer ul {
+    margin: 1rem 0;
+}
+
+footer li {
+    height: 100%;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+footer a {
+    color: white;
+}
+
+footer i {
+    width: 30px;
+    font-size: 15px;
+}

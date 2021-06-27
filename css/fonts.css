@@ -1,13 +1,20 @@
 @font-face {
-    font-size:10px;
+    font-size: 10px;
 }
 
 @font-face {
-            font-family: "Roboto", sans-serif;
-            src:local("Roboto");
+    font-family: "Roboto";
+    src:url('https://www.1001freefonts.com/roboto') format('embedded-opentype');
+        url('Roboto-webfont.woff') format('woff'),
+        url('Roboto-webfont.ttf') format('truetype'),
+        url('Roboto-webfont.svg#Roboto') format('svg');
 }
+
 @font-face {
-    font-family:"Shrikhand", sans-serif;
-    src:local("Shrikhand");
-    font-size:20px;
+    font-family: 'Shrikhand';
+    src:url('https://www.fontsquirrel.com/fonts/shrikhand') format('embedded-opentype');
+        url('Shrikhand-webfont.woff') format('woff'),
+        url('Shrikhand-webfont.ttf') format('truetype'),
+        url('Shrikhand-webfont.svg#Shrikhand') format('svg');
+    font-size: 20px;
 }
