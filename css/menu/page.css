@@ -87,28 +87,13 @@ body {
 .logotitle{
     padding-left: 20px;
     line-height: 51px;
-    font-size: 30px;
+    font-size: 22px;
 }
 
-/*#logo div {
-    height: 51px;
-}
-
-#logo div h2 {
-
-    padding: 10px 0 0 15px;
-    position: absolute;
-    width: 100%;
-    background-color: rgb(239, 239, 239);
-    border: 1px solid rgb(239, 239, 239);
-    border-radius: 40px 40px 0 0;
-    font-weight: 600;
-    font-size: 25px;
-}*/
 
 #logo div i {
     top: 15px;
-    font-size: 25px;
+    font-size: 18px;
  }
 
 #starter {
@@ -130,7 +115,7 @@ body {
         "starter"
         "main_course"
         "dessert";
-    grid-gap: 1rem;
+    grid-gap: 2rem;
 
     grid-template-columns: 1fr;
     background-color: rgb(239, 239, 239);
@@ -140,11 +125,13 @@ body {
 h3 {
     margin-bottom: 1.5rem;
     padding-left:10px;
-    border-bottom: 4px solid lightseagreen;
     width: 55px;
-   
+    font-weight: 100;
+    font-size:17px;
 }
-
+h3 span{
+    border-bottom: 4px solid lightseagreen;
+}
 .title {
     grid-area: title;
 }
@@ -174,21 +161,24 @@ h3 {
     border: 1px solid rgb(239, 239, 239);
     border-radius: 15px;
     box-shadow: 0 3px 5px 0 rgb(239 239 239);
-    overflow-x: hidden;
-    text-overflow: ellipsis;
+   
 }
-
+.with{
+    font-size:15px;
+}
 .price {
     
     font-weight: 600;
-    transition: all 1s ease-out;
+    transition: transform 100ms ease-out;
 }
-
+.check{
+    position:relative;
+    right:10px;
+}
 .check i{
     
     position: absolute;
-    right: 10px;
-    bottom: 5px;
+    bottom: 20px;
     width: 20px;
     height: 20px;
     line-height: 20px;
@@ -203,15 +193,22 @@ h3 {
 
 .check:hover,
 .check:active {
-    transition: transform 450ms, color 300ms 150ms;
+    
+/*    transition: transform 450ms, color 300ms 150ms;*/
     border:1px solid rgba(153,226,208,1);
     border-radius: 15%;
     background-color: rgba(153,226,208,1);
 }
-
+.price +.check:hover,.check:active {
+    transition: transform 450ms, color 300ms 150ms;
+    transform: translate(-30px,0)
+}
 button {
+    position: relative;
+    left: 70px;
+    bottom:15px;
     padding: 0 1rem;
-    margin: 2rem 2rem 2rem 5.5rem;
+    margin:1rem 2rem ;
     width: 10rem;
     height: 3rem;
     line-height: 3rem;
