@@ -12,7 +12,7 @@ html {
 
  h1, h2, h3, h4, h5, h6 {
      font-family: "Roboto", sans-serif;
-     font-size: 20px;
+     font-size: 18px;
      font-weight:800;
     
 
@@ -275,9 +275,22 @@ body {
     right: 30px;
     bottom: 45px;
     font-size: 20px;
+    
    
 }
-
+#resto figcaption .fas{
+    color:white;
+    opacity:0;
+    font-weight:bold;
+}
+.far:hover,.far:active{
+    display:none;
+    opacity:0;
+}
+.fas:hover,.fas:active{
+    color:rgba(255,121,218,1);
+    opacity:1;
+}
 #resto i:hover, #resto i:active{
     display:block;
     background: linear(to bottom right , #ff79da);

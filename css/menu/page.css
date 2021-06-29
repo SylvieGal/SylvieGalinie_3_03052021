@@ -67,6 +67,9 @@ body {
     color: black;
 
 }
+#logo img{
+    height:160px;
+}
 .logotitle{
     grid-area:logotitle;
 }
@@ -87,7 +90,7 @@ body {
 .logotitle{
     padding-left: 20px;
     line-height: 51px;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 
@@ -127,7 +130,7 @@ h3 {
     padding-left:10px;
     width: 55px;
     font-weight: 100;
-    font-size:17px;
+    font-size:15px;
 }
 h3 span{
     border-bottom: 4px solid lightseagreen;
@@ -163,18 +166,30 @@ h3 span{
     box-shadow: 0 3px 5px 0 rgb(239 239 239);
    
 }
+.title{
+    font-size:18px;
+}
 .with{
     font-size:15px;
 }
 .price {
     
     font-weight: 600;
+    transform:translateX (-30px);
     transition: transform 100ms ease-out;
 }
 .check{
+
     position:relative;
     right:10px;
+    transition: transform 330ms ease-in-out;
+    overflow: hidden;
+    display: inline-block;
+    transform: translateX (-30px);
+    transition: transform 280ms ease-out 50ms;
+   
 }
+
 .check i{
     
     position: absolute;
@@ -193,15 +208,15 @@ h3 span{
 
 .check:hover,
 .check:active {
-    
-/*    transition: transform 450ms, color 300ms 150ms;*/
-    border:1px solid rgba(153,226,208,1);
+    transition: transform 450ms, color 300ms 150ms;
+   
+    /*transform: scale(1.5,0);
+*/    border:1px solid rgba(153,226,208,1);
     border-radius: 15%;
     background-color: rgba(153,226,208,1);
 }
-.price +.check:hover,.check:active {
-    transition: transform 450ms, color 300ms 150ms;
-    transform: translate(-30px,0)
+.check:hover +.price ,.price +.check:active {
+    transform:translate(-30px);
 }
 button {
     position: relative;
