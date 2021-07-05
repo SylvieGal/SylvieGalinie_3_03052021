@@ -278,13 +278,14 @@ body {
     bottom: 45px;
     font-size: 20px;
     
-   
 }
 
 #resto i:hover, #resto i:active{
     display:block;
-    background: linear(to bottom right , #ff79da);
-    transition: transform 550ms,color 150ms;
+    /*background: linear(to bottom right , #ff79da);*/
+    transform-origin:center center;
+    transform:scaleX(1);
+    transition: transform 250ms, color 150ms;
     font-weight:bold;
     color:rgba(255,121,218,1);
 }
