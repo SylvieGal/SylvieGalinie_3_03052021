@@ -55,7 +55,7 @@ body {
     top: 10px;
     left: 120px;
     color:black;
-    font-family:"Shrikhand";
+
 }
 
 #logo i {
@@ -91,7 +91,7 @@ body {
     padding-left: 20px;
     line-height: 51px;
     font-size: 20px;
-    font-family:'shrikhand';
+
 }
 
 
@@ -176,18 +176,17 @@ h3 span{
 .price {
     font-size:17px;
     font-weight: 600;
-    transform:translateX (-30px);
+    transform:translateX(-30px);
     transition: transform 100ms ease-out;
 }
 .check{
 
     position:relative;
     right:10px;
-    transition: transform 330ms ease-in-out;
     overflow: hidden;
     display: inline-block;
-    transform: translateX (-30px);
-    transition: transform 280ms ease-out 50ms;
+   /* transform: translateX(-30px);
+    transition: transform 280ms ease-out 50ms;*/
    
 }
 
@@ -199,9 +198,9 @@ h3 span{
     height: 20px;
     line-height: 20px;
     font-size: 15px;
-    color:rgba(153,226,208);
+    color:rgba(153,226,208,0);
     background-color: white;
-    border: 1px solid rgb(153,226,208);
+    border: 1px solid rgba(153,226,208,0);
     border-radius:50%;
     opacity:0;
     
@@ -209,8 +208,8 @@ h3 span{
 
 .check:hover,
 .check:active {
-    transition: transform 450ms, color 300ms 150ms;
-   
+    transition: transform 450ms, color 300ms 150ms ;
+    opacity:1;
     /*transform: scale(1.5,0);
 */    border:1px solid rgba(153,226,208,1);
     border-radius: 15%;

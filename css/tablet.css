@@ -1,4 +1,7 @@
 
+#logo{
+    text-align:center;
+}
 #div_title{
     display:flex;
     padding: 0 0 0 55px;
