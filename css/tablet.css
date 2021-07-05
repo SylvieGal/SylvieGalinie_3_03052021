@@ -1,7 +1,7 @@
 
 #div_title{
     display:flex;
-    padding-left:20px;
+    padding: 0 0 0 55px;
     height: 50px;
     font-size: 15px;
     box-shadow: inset 0 2px 0 0 lightgrey;
