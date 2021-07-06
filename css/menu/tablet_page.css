@@ -1,12 +1,17 @@
 
 #logo h1{
-    text-align: center;
+    padding-left: 175px;
+    font-family: shrikhand;
+    font-size: 30px;
 }
 .logotitle{
     grid-area:logotitle;
 }
 .logoicon{
     grid-area:logoicon;
+}
+#logo img{
+    height:260px;
 }
 .logoname{
     display:grid;
@@ -18,6 +23,12 @@
     border-radius: 40px 40px 0 0;
 
 }
+#logo div i {
+    padding-left: 40px;
+}
 .price{
     padding-left: 35px;
+}
+button{
+    left: 268px;
 }

@@ -182,7 +182,7 @@ h3 span{
 .check{
 
     position:relative;
-    right:10px;
+/*    right:10px;*/
     overflow: hidden;
     display: inline-block;
    /* transform: translateX(-30px);
@@ -212,7 +212,7 @@ h3 span{
     opacity:1;
     /*transform: scale(1.5,0);
 */    border:1px solid rgba(153,226,208,1);
-    border-radius: 15%;
+    border-radius: 0 15% 15% 0;
     background-color: rgba(153,226,208,1);
 }
 .check:hover +.price ,.price +.check:active {
