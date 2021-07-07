@@ -5,6 +5,9 @@
 html {
     font-family: "Roboto", sans-serif;
 }
+body{
+    overflow-x:hidden;
+}
 #logo{
     height: 55px;
     line-height: 65px;

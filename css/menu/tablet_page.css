@@ -1,4 +1,10 @@
 
+body{
+    overflow-X:hidden;
+}
+#logo i{
+
+}
 #logo h1{
     padding-left: 175px;
     font-family: shrikhand;

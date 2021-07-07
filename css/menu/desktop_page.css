@@ -1,12 +1,25 @@
 
-#logo h1{
-    left:360px;
+
+body{
+    overflow-x: hidden;
 }
+#logo i {
+    font-size:25px
+}
+#logo h1{
+    left: 500px;
+    font-size: 50px;
+
+}
+
 #logo img{
     height: 360px;
 }
 #logo div {
     padding-left:20px;
+}
+#logo div i {
+    padding-left: 60px;
 }
 button{
     left: 530px;
