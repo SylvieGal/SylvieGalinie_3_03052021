@@ -1,8 +1,26 @@
 
 
 body{
+    grid-template-rows: 725px repeat(2, auto);
     overflow-x: hidden;
+
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "roboto", sans-serif;
+    font-size: 30px;
+}
+#menu ul{
+    font-size:26px;
+}#menu li {
+     grid-template-columns: 1.8fr .1fr .1fr;
+     grid-template-rows: 40px;
+ }
+
 #logo i {
     font-size:25px
 }
@@ -13,11 +31,13 @@ body{
 }
 
 #logo img{
-    height: 360px;
+    height: 570px;
 }
-#logo div {
+.logoname  {
     padding-left:20px;
+    font-size:35px;
 }
+
 #logo div i {
     padding-left: 60px;
 }

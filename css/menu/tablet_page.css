@@ -1,26 +1,41 @@
 
-body{
-    overflow-X:hidden;
+:root {
+    font-size: 12px;
 }
-#logo i{
+
+#menu ul {
+    font-size: 22px;
+}
+
+#menu li {
+    grid-template-columns: 1.8fr .1fr .1fr;
+    grid-template-rows: 35px;
+}
+
+#logo i {
 
 }
-#logo h1{
-    padding-left: 175px;
-    font-family: shrikhand;
+
+#logo h1 {
+    left: 280px;
+    font-family: "shrikhand";
     font-size: 30px;
 }
-.logotitle{
-    grid-area:logotitle;
+
+.logotitle {
+    grid-area: logotitle;
 }
-.logoicon{
-    grid-area:logoicon;
+
+.logoicon {
+    grid-area: logoicon;
 }
-#logo img{
-    height:260px;
+
+#logo img {
+    height: 260px;
 }
-.logoname{
-    display:grid;
+
+.logoname {
+    display: grid;
     grid-template-areas:"logotitle logoicon";
     grid-template-rows:51px;
     grid-template-columns: 1fr .3fr;
@@ -29,12 +44,15 @@ body{
     border-radius: 40px 40px 0 0;
 
 }
+
 #logo div i {
     padding-left: 40px;
 }
-.price{
+
+.price {
     padding-left: 35px;
 }
-button{
+
+button {
     left: 268px;
 }
