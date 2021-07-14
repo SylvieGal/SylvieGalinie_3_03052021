@@ -139,6 +139,9 @@ body {
     font-size: 2.5rem;
 
 }
+.headermenu i{
+    padding-right:3rem;
+}
 h3 {
     margin-bottom: 15px;
     padding-left: 15px;
@@ -189,11 +192,11 @@ header.title {
 }
 
 .with {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .price {
-
+    padding-right: 1.5rem;
     font-size: 1.7rem;
     font-weight: 600;
 
@@ -201,15 +204,16 @@ header.title {
 .price:hover,
 .price:active{
     transform: translateX(-30px);
-    transition: transform 100ms ease-out;
+    transition: transform 100ms ease;
+    cursor:pointer;
 }
 .check {
 
     position: relative;
-    overflow: hidden;
+
     display: inline-block;
     transform: translateX(-30px) scale(1.5,0);
-    transition: transform 280ms ease-out 50ms;
+    transition: transform 280ms ease ;
 
 }
 
@@ -221,11 +225,11 @@ header.title {
     height: 20px;
     line-height: 20px;
     font-size: 1.5rem;
-    color: rgb(153, 226, 208);
+    color: rgba(153, 226, 208,1);
     background-color: white;
-    border: 1px solid rgb(153, 226, 208);
+    border: 1px solid rgba(153, 226, 208,1);
     border-radius: 50%;
-    opacity: 0;
+    opacity: 1;
 
 }
 
@@ -236,10 +240,12 @@ header.title {
     border: 1px solid rgba(153, 226, 208, 1);
     border-radius: 0 15% 15% 0;
     background-color: rgba(153, 226, 208, 1);
+    cursor:pointer;
 }
 
-.check:hover + .price, .price + .check:active {
+.check + .price:hover, .check + .price:active {
     transform: translate(-30px);
+    cursor:pointer;
 }
 
 button {

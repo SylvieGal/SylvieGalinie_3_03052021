@@ -3,18 +3,7 @@
     font-size: 12px;
 }
 
-#menu ul {
-    font-size: 22px;
-}
 
-#menu li {
-    grid-template-columns: 1.8fr .1fr .1fr;
-    grid-template-rows: 35px;
-}
-
-#logo i {
-
-}
 
 #logo h1 {
     left: 280px;
@@ -34,7 +23,7 @@
     height: 260px;
 }
 
-.logoname {
+.logotitle {
     display: grid;
     grid-template-areas:"logotitle logoicon";
     grid-template-rows:51px;
@@ -48,11 +37,14 @@
 #logo div i {
     padding-left: 40px;
 }
-
-.price {
-    padding-left: 35px;
+#menu ul {
+    font-size: 22px;
 }
 
-button {
-    left: 268px;
+#menu li {
+    grid-template-columns: 1.8fr .2fr ;
+    grid-template-rows: 35px;
+}
+headermenu i{
+    padding-right: 1.5rem;
 }
