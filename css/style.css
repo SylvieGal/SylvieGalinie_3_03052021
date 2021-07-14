@@ -16,7 +16,7 @@ body{
    
 }
 
- h1, h2, h3, h4, h5, h6 {
+ h2, h3, h4, h5, h6 {
      font-family: "Roboto", sans-serif;
      font-size: 18px;
      font-weight:800;
@@ -58,7 +58,7 @@ body {
     /*background-color: #eee*/;
 }
 
-#logo h1{
+#logo h1 {
     text-align: center;
     font-family: "shrikhand" ;
     font-size:3rem;
@@ -307,6 +307,11 @@ footer{
     padding:20px;
     background-color:#303030;
     color:white;
+}
+#footer h1 {
+    font-size: 2rem;
+    font-family: "shrikhand";
+    color: white;
 }
 footer ul{
     margin:1rem 0;
