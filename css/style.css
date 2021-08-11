@@ -8,23 +8,27 @@ html {
 body{
     overflow-x:hidden;
 }
-#logo{
+#logo {
     height: 55px;
-    line-height: 65px;
+    line-height: 55px;
+    font-size: 2rem;
+}
+@font-face{
+    font-family: "Shrikhand", sans-serif;
+}
+@font-face {
+    font-family: "Roboto", sans-serif;
+}
+h1{
     font-family: "Shrikhand", sans-serif;
     font-size: 2rem;
-   
 }
-
  h2, h3, h4, h5, h6 {
      font-family: "Roboto", sans-serif;
      font-size: 18px;
      font-weight:800;
      letter-spacing: -2px;
-    
-
-}
-
+ }
 #logo {
     grid-area: logo;
 }
@@ -60,7 +64,7 @@ body {
 
 #logo h1 {
     text-align: center;
-    font-family: "shrikhand" ;
+    /*font-family: "shrikhand" ;*/
     font-size:3rem;
     font-weight:800;
     background-color: white;
@@ -92,7 +96,7 @@ body {
     background-color: transparent;
 }
 #intro i{
-    transform: translateY(15px);
+    line-height: 50px;
     width: 34%;
     text-align: right;
     font-size:1.7rem;
@@ -230,13 +234,10 @@ body {
 }
 
 #resto h2 {
-   
     height: 30px;
     line-height: 30px;
     font-size: 25px;
-
 }
-
 #resto figure{
     position: relative;
     height: 100%;
@@ -244,29 +245,21 @@ body {
     box-shadow: 0 5px 10px silver;
     background-color: #fff;
     color: black;
-
 }
-
 #resto img {
-
     object-fit:cover;
     width:100%;
     height: calc(100% - 80px);
     border-radius: 1rem 1rem 0 0;
 }
-
-
-
 #resto figcaption {
     padding: 10px;
     height: 80px;
 }
-
 #resto figcaption h3 {
     display: inline-block;
     font-size: 20px;
 }
-
 #resto i {
     position: absolute;
     right: 30px;
@@ -276,12 +269,13 @@ body {
 
 #resto i:hover, #resto i:active{
     display:block;
-    /*background: linear(to bottom right , #ff79da);*/
     transform-origin:center center;
     transform:scaleX(1);
     transition: transform 250ms, color 150ms;
     font-weight:bold;
-    color:rgba(255,121,218,1);
+    background: radial-gradient( rgb(255 121 218),#9356dc);
+    color: transparent;
+    -webkit-background-clip: text;
 }
 #resto figcaption p{
     font-size:1.5rem;
@@ -301,8 +295,6 @@ body {
     background-color: mediumspringgreen;
     color: mediumseagreen;
 }
-
-
 footer{
     padding:20px;
     background-color:#303030;
@@ -310,7 +302,6 @@ footer{
 }
 #footer h1 {
     font-size: 2rem;
-    font-family: "shrikhand";
     color: white;
 }
 footer ul{

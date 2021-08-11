@@ -1,5 +1,15 @@
 
-h1,
+
+@font-face{
+    font-family: "Shrikhand", sans-serif;
+}
+@font-face {
+    font-family: "Roboto", sans-serif;
+}
+h1{
+    font-family: "Shrikhand", sans-serif;
+    font-size: 2rem;
+}
 h2,
 h3,
 h4,
@@ -8,17 +18,12 @@ h6 {
     font-family: "roboto", sans-serif;
     font-size: 30px;
 }
-
-
-
 #div_title{
     padding: 0px 0 0 195px;
 }
 #list{
     font-size: 20px;
 }
-
-
 #resto{
     grid-template-rows: auto repeat(4,400px);
 }

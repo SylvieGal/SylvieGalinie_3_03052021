@@ -1,14 +1,19 @@
 :root {
     font-size: 10px;
 }
-
+@font-face {
+    font-family: "Shrikhand";
+}
+@font-face{
+    font-family:"Roboto";
+}
 html {
     font-family: "Roboto", sans-serif;
 }
-
-
-
-h1,
+h1 {
+    font-family: "Shrikhand", sans-serif;
+    font-size: 2rem;
+}
 h2,
 h3,
 h4,
@@ -17,19 +22,15 @@ h6 {
     font-family: "roboto", sans-serif;
     font-size: 2rem;
 }
-
 #logo {
     grid-area: logo;
 }
-
 #menu {
     grid-area: menu;
 }
-
 #footer {
     grid-area: footer;
 }
-
 body {
     display: grid;
     grid-template-areas:
@@ -38,33 +39,22 @@ body {
         "footer ";
     grid-template-rows: repeat(3, auto);
     grid-template-columns: 1fr;
-
     background-color: #eee;
 }
 #logo{
-    
-    position:relative;   
+    position:relative;
     height: 310px;
     background-size: cover;
     font-family :"Shrikhand", sans-serif;
     font-size: 2rem ;
 }
-#palette >#logo{
-    background:url(../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg)center top ;
+#logo img{
+    height: 100%;
+    object-fit: cover;
 }
-#note>#logo{
-    background:url(../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg)center top ;
-}
-#francaise>#logo{
-    background:url(../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg)center top
-}
-#delice>#logo{
-    background:url(../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg)center top;
-}
-.logoicon {
+.logoicon{
     position :absolute;
     color:black;
-    /*top:17px;*/
     left:20px;
     font-size:1.6rem;
 }
@@ -75,7 +65,6 @@ body {
     line-height: 50px;
     text-align: center;
     background-color: white;
-   
 }
 #logo i {
     transform:translateY(15px);
@@ -83,10 +72,8 @@ body {
     font-size: 1.5rem;
     color: black;
 }
-
 #logo h1{
     font-size: 3rem;
-    font-family: "shrikhand";
     color: black;
     background-color: white;
 }
@@ -100,12 +87,22 @@ body {
     padding: 15px ;
     background-color:rgb(239,239,239);
     z-index:1000;
-    transform: translateY(-35px);
     border: 1px solid rgb(239, 239, 239);
     border-radius: 40px 40px 0 0;
     font-size: 2Rem;
 }
-
+.headermenu i {
+    padding-right: 20px;
+}
+.headermenu i:hover, .headermenu i:active{
+    transform-origin:center center;
+    transform:scaleX(1);
+    transition: transform 250ms, color 150ms;
+    font-weight:bold;
+    background: radial-gradient( rgb(255 121 218),#9356dc );
+    color: transparent;
+    -webkit-background-clip: text;
+}
 .headermenu{
     grid-area:headermenu;
 }
@@ -129,19 +126,17 @@ body {
         "main_course"
         "dessert";
     grid-gap: 2rem;
-
     grid-template-columns: 1fr;
     background-color: rgb(239, 239, 239);
 }
+
 .headermenu h2{
     letter-spacing: -.2rem;
     font-weight: 800; 
     font-size: 2.5rem;
 
 }
-.headermenu i{
-    padding-right:3rem;
-}
+
 h3 {
     margin-bottom: 15px;
     padding-left: 15px;
@@ -153,99 +148,85 @@ h3 {
 h3 span {
     border-bottom: 4px solid lightseagreen;
 }
-
-header.title {
-    grid-area: title;
-}
-
-.with {
-    grid-area: with;
-}
-
-.price {
-    grid-area: price;
-}
-
-.check {
-    grid-area: check;
-}
-
-#menu li {
+ul{
     display: grid;
-    grid-template-areas:"title title "
-                        "with price ";
-    grid-template-columns:1.8fr .2fr ;
-    grid-template-rows:30px;
-    margin: .5rem .5rem 1rem .5rem;
-    padding-left: 10px;
-    line-height: 30px;
-    font-size: 2rem;
-    background-color: white;
-    border: 1px solid rgb(239, 239, 239);
-    border-radius: 15px;
-    box-shadow: 0 3px 5px 0 rgb(239 239 239);
+    grid-gap: 20px;
+    padding: 15px;
+    grid-template-rows: repeat(3, 70px);
 
 }
-
+#menu li {
+    display:flex;
+    background-color:white;
+    border-radius:15px;
+}
+li span:first-child{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+}
 .title {
     font-size: 1.7rem;
 }
-
 .with {
     font-size: 1.3rem;
 }
-
 .price {
-    padding-right: 1.5rem;
+    position: absolute;
+    right: 30px;
+    bottom:10px;
     font-size: 1.7rem;
     font-weight: 600;
-
-}
-.price:hover,
-.price:active{
-    transform: translateX(-30px);
-    transition: transform 100ms ease;
-    cursor:pointer;
 }
 .check {
-
-    position: relative;
-
-    display: inline-block;
-    transform: translateX(-30px) scale(1.5,0);
-    transition: transform 280ms ease ;
-
+    position:absolute;
+    right:10px;
+    background-color: rgb(153, 226, 208);
+    line-height: 70px;
+    text-align: center;
+    z-index:-1;
+    border-radius: 0 15px 15px 0;
 }
-
 .check i {
-
-    position: absolute;
-    bottom: 20px;
     width: 20px;
     height: 20px;
     line-height: 20px;
     font-size: 1.5rem;
-    color: rgba(153, 226, 208,1);
-    background-color: white;
-    border: 1px solid rgba(153, 226, 208,1);
+    background-color: rgba(153, 226, 208,1);
+    color: white;
+    border: 1px solid white;
     border-radius: 50%;
     opacity: 1;
-
 }
-
-.check:hover,
-.check:active {
-    transition: transform 450ms, color 300ms 150ms;
-    opacity: 1;
-    border: 1px solid rgba(153, 226, 208, 1);
-    border-radius: 0 15% 15% 0;
-    background-color: rgba(153, 226, 208, 1);
+li:hover {
     cursor:pointer;
 }
-
-.check + .price:hover, .check + .price:active {
-    transform: translate(-30px);
-    cursor:pointer;
+li:hover span:first-child{
+    width:90%;
+    text-overflow: ellipsis;
+  }
+li:hover .check{
+    width:10%;
+    z-index:1;
+    transform: translateX(-30px);
+    transition: transform .1s;
+    animation:selectc 1s both;
+}
+@keyframes selectc {
+    from {
+        width:0;
+        transform:translateX(0px);
+        z-index:-1;
+        opacity:0;
+    }
+    to {
+        padding:0 ;
+        width:10%;
+        text-overflow: ellipsis;
+        transform:translateX(-30px);
+        z-index:1;
+        opacity:1;
+    }
 }
 
 button {
@@ -271,10 +252,9 @@ footer {
 }
 #footer h1 {
     font-size: 2rem;
-    font-family: "shrikhand";
-    
 }
 footer ul {
+    grid-template-rows:auto;
     margin: 1rem 0;
 }
 
