@@ -2,8 +2,10 @@
 :root {
     font-size: 12px;
 }
-
 #logo h1 {
     left: 280px;
+}
+li:hover .check{
+    right:-20px;
 }
 

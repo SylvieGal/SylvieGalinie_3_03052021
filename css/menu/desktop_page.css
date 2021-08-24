@@ -11,8 +11,9 @@ body{
 @font-face {
     font-family: Roboto;
 }
-h1{font-family: "Shrikhand", sans-serif}
-
+h1{
+    font-family: "Shrikhand", sans-serif
+}
 h2,
 h3,
 h4,
