@@ -347,7 +347,10 @@ button {
     color: white;
     font-size: 1.7rem;
 }
-
+button:hover{
+    filter: drop-shadow(0 0 10px #ff79da);
+    opacity:.7;
+}
 footer {
     margin-top:2rem ;
     padding: 20px;

@@ -133,7 +133,10 @@ body {
     color: white;
     font-size: 1.5rem;
 }
-
+#intro button:hover{
+    filter:drop-shadow(0 0 10px  #ff79da );
+    opacity:0.7;
+}
 #how {
     height: fit-content;
     background-color: white;
@@ -179,19 +182,15 @@ body {
     border-radius: 15px;
     box-shadow: 0 3px 5px 0 rgb(239 239 239);
     font-weight: 600;
-}
-
-#choice, #compose {
-
     background-color: #f9f9f9;
 }
 
-#eat {
+#choice:hover,#compose:hover, #eat:hover {
 
     background-color: #f4e3ff;
 }
 
-#eat i {
+#choice i:hover,#compose i:hover, #eat i:hover {
     color: blueviolet;
 }
 
